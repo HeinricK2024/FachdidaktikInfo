@@ -1,0 +1,229 @@
+DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio-Fachdidaktik Informatik</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <ul>
+        <li><a href="../index.html"><i class="fas fa-home"></i> Startseite</a></li>
+        <li>
+            <a href="fachdidaktik_overview.html"><i class="fas fa-book"></i> Einführung in die Fachdidaktik Informatik</a>
+            <ul>
+                <li><a href="programmieren.html">Programmieren</a></li>
+                <li><a href="ides.html">Entwicklungsumgebungen</a></li>
+                <li><a href="objects.html">Objects First vs. Objects Later</a></li>
+                <li><a href="didaktikprog.html">Didaktische Ansätze</a></li>
+                <li><a href ="didaktische_ansatze.html">Evaluation von Unterrichtsmaterialien für den Informatikunterricht</a></li>
+                <li><a href="gamification.html">Gamification</a></li>
+                <li><a href="boolsche_algebra.html">Einführung in die Boolesche Algebra</a></li>
+                <li><a href="introduction_in_scratch.html">Scratch Unterrichtseinheit</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="../didkonz/konzeptionen_overview.html"><i class="fas fa-book"></i> Didaktische Konzeptionen der beruflichen Bildung</a>
+            <ul>
+                <li><a href="../didkonz/albers_didaktische_modelle.html">Albers - Modelle und didaktische Konzepte in der Berufsbildung</a></li>
+                <li><a href="../didkonz/geschichte_bildungsbegriff.html">Historischer Hintergrund der beruflichen Ausbildung</a></li>
+                <li><a href="../didkonz/euler_wirtschaftsdidaktik.html">Euler - Theoretische Zugänge zur Wirtschaftsdidaktik</a></li>
+                <li><a href="../didkonz/arnold_kompetenzbegriff.html">Arnold, Schüssler - Entwicklung des Kompetenzbegriffs</a></li>
+                <li><a href="../didkonz/clement_kompetenzentwicklung.html">Clement - Kompetenzentwicklung im internationalen Kontext</a></li>
+                <li><a href="../didkonz/kutscha_allgemeine_berufliche_bildung.html">Kutscha - Zum Verhältnis von allgemeiner und beruflicher Bildung im Kontext bildungstheoretischer Reformkonzepte</a></li>
+            </ul>
+        </li>
+        <li><a href="../reflexion.html"><i class="fas fa-book"></i>Verknüpfung der beiden Veranstaltungen</a></li>
+    </ul>
+</div>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+<main>
+    <div class="container">
+        <h1>Sitzung - Thema: Objects First vs. Objects Later</h1>
+<h3>Aufgabenstellung</h3>
+    <h3>1. Definition und Grundprinzipien der Objektorientierung</h3>
+    <p><b>- Erklären Sie, was unter Objektorientierung verstanden wird, anhand von Beispielen, wie auf Informatik 
+      Franke beschrieben.</b>
+    <br>
+    Unter Objektorientierung ist ein Programmierparadigma zu verstehen, dass sich auf die Organisation von Code in Form von Objekten und Klassen konzentriert. 
+    Objekte sind Instanzen von Klassen, die Entitäten in der Software darstellen. Jede Entität weist bestimmte Attribute und Methoden auf.
+    <img src="../image/inf/oop_img/oop_py_aufg2.jpg" alt="OOP_Python_Aufg2" class="responsive-img" onclick="openModal(this);">
+    <div id="description">Aufgabe 2 zeigt die Klasse bzw. Entität "Person" mit den Attributen "Name" und "Alter". Auch zeigt diese Aufgabe, wie reale Sachverhalte in einer Software 
+      dargestellt werden können. </div>
+    <br>
+    <br>
+    <b>- Welche Rolle spielt die Objektorientierung in der Programmierung? Warum verwenden wir sie und welche 
+      Vorteile bietet sie?</b>
+    <br>
+    Die Objektorientierung wird in der Programmierung insbesondere bei der Entwicklung komplexer und großer Softwareprojekte verwendet. Sie bietet einen strukturierten Ansatz, 
+    der die Organisation, Wiederverwendbarkeit und Wartbarkeit von Code erheblich verbessert. Die Objektorientierung hilft dabei, reale oder abstrakte Sachverhalte durch Objekte 
+    in einer Software zu modellieren. Durch die Aufteilung des Programmcodes in kleinere, unabhängigere Einheiten wird die Komplexität reduziert, sodass die Logik des Programms 
+    übersichtlich und leicht verständlich bleibt.
+    <br>
+    Die objektorientierte Programmierung ermöglicht es, reale Sachverhalte durch Objekte und Klassen darzustellen. Jedes Objekt entspricht dabei einer Entität aus der realen Welt, 
+    wie ein Auto, ein Mitarbeiter oder ein Kunde. So können komplexe Systeme einfacher verstanden und implementiert werden. Die Objektorientierung erlaubt die Modularisierung von 
+    Programmcode in einzelne Klassen und Objekte, die für sich genommen funktional und unabhängig sind. So können verschiedene Teile des Codes separat entwickelt , getestet und 
+    gewartet werden, was wiederum die Effizienz und Qualität des Entwicklungsprozesses verbessert. Durch Vererbung können bestehende Klassen erweitert und wiederverwendet werden, 
+    ohne den Code zu duplizieren. Dies fördert die Wiederverwendung und spart Entwicklungszeit, da bereits entwickelte und getestete Komponenten in neuen Anwendungen genutzt werden können. 
+    Auch bietet die Objektorientierung die Möglichkeit, bestehende Klassen und Objekte zu erweitern und zu modifizieren, ohne den bestehenden Code zu verändern oder zu unterbrechen. 
+    Neue Funktionalitäten können einfach hinzugefügt werden, indem neue Klassen erstellt werden, die von vorhandenen Klassen erben. Durch Kapselung können interne Details von Klassen 
+    vor dem Rest des Systems verborgen werden, wodurch das Risiko unerwarteter Nebenwirkungen reduziert wird, wenn Änderungen an einem Teil des Codes vorgenommen werden.
+  </p>
+
+    
+    <h3>2. Darstellung der Ansätze "Objects First" und "Objects Later"</h3>
+    <p><b>Wie werden die Ansätze "Objects First" und "Objects Later" jeweils definiert?</b>
+      <br> Beim “Objects First”-Ansatz wird die objektorientierte Sichtweise gleich zu Beginn vermittelt, während beim “Objects Later”-Ansatz 
+      zunächst prozedurale Konzepte unterrichtet werden, bevor später auf die objektorientierte Sichtweise umgestiegen wird (vgl. Ehlert, 2012, S.7).
+      <br>
+      Der Objects Later-Ansatz startet mit prozeduralen Konzepten und wechselt später zur objektorientierten Sichtweise (vgl. Ehlert, 2012, S.15). Hierbei nutzt man vorhandenes Wissen als Grundlage für den schrittweisen 
+      Übergang zur Objektorientierung (vgl. Ehlert, 2012, S.8).
+    <br>Beide Ansätze behandeln jedoch die gleichen Themen, wobei der Fokus beim “Objects First”-Ansatz eher auf der Programmierung liegt, 
+    während der “Objects Later”-Ansatz einen schrittweisen Übergang ermöglicht (vgl. Ehlert, 2012, S.7).
+    </p>
+    
+    <h3>3. Vergleich und Kontrastierung der Ansätze</h3>
+    <p><b>Beschreiben Sie die wesentlichen Unterschiede zwischen den Ansätzen "Objects First" und 
+      "Objects Later". Welche Gemeinsamkeiten lassen sich erkennen?</b>
+      <br>
+      Die Ansätze “Objects First” und “Objects Later” unterscheiden sich hauptsächlich in der Reihenfolge der vermittelten Themen im Informatik-Anfangsunterricht. 
+      Beim Objects First-Ansatz beginnt man mit der objektorientierten Sichtweise und fokussiert sich auf das Verständnis von Objekten und Klassen von Anfang an. 
+      Themen wie Klassenimplementierung, Objekterzeugung und Methoden stehen hierbei im Mittelpunkt.
+      <br>
+      Beim Objects Later-Ansatz startet man dagegen mit der prozeduralen Sichtweise und wechselt später zur objektorientierten Sichtweise. Dabei nutzt man vorhandenes 
+      Wissen über prozedurale Konzepte, wie z.B. Schleifen, Bedingungen, als Grundlage. Themen wie Vererbung, Attributierung und Polymorphismus werden im Gegensatz zum 
+      Objects First-Ansatz erst später behandelt. Somit handelt es sich beim sogenannten Objects Later-Ansatz um den schrittweisen Übergang von prozeduraler zu 
+      objektorientierter Programmierung.
+      <br>
+      Beide Ansätze vermitteln letztendlich die gleichen Themen der objektorientierten Programmierung. Die Wahl zwischen den Ansätzen hängt von pädagogischen Zielen, 
+      Lehrplänen und individuellen Präferenzen ab. Beide Ansätze haben Vor- und Nachteile, und es gibt keine allgemeingültige Antwort, welcher besser ist. Es kommt 
+      auf den Kontext und die Lernenden an. Die Diskussion über den besten Ansatz ist weiterhin aktuell und wird von verschiedenen Faktoren beeinflusst.
+ </p>
+    
+    <h3>4. Bewertung der Vor- und Nachteile</h3>
+    <p><b>Diskutieren Sie die potenziellen Vor- und Nachteile beider Lehrmethoden. Welche Implikationen könnten 
+      diese für den Lernerfolg in der objektorientierten Programmierung haben?</b>
+      <br>
+      <br>
+      <b>Objects-First</b>
+      <br>
+      <b>Vorteile</b>
+      <br>
+      Schüler lernen bereits früh die Konzepte der objektorientierten Programmierung kennen. Das direkte Erstellen von Objekten kann motivierend sein und den praktischen 
+      Bezug erhöhen. Somit können Schüler eine zusammenhängende Sichtweise auf die objektorientierte Programmierung entwickeln.
+      <br>
+      <b>Nachteile</b>
+      <br>
+      Anfänger könnten mit der Komplexität der Objektorientierung überfordert sein, da Schüler hierfür abstrakte Konzepte wie Klassen und Vererbung verstehen müssen. 
+      Möglicherweise könnten Begriffe wie “Klasse” und “Objekt” miteinander verwechselt werden, was wiederum zu Verwirrungen führen kann.
+      <br>
+      <br>
+      <b>Objects-Later</b>
+      <br>
+      <b>Vorteile</b>
+      <br> 
+      Schüler haben bereits Erfahrung mit prozeduraler Programmierung, sodass auf bereits erworbenes Wissen aufgebaut werden kann. Dies erlaubt eine sukzessive Hinführung 
+      zur objektorientierten Programmierung.
+      <br>
+      <b>Nachteile</b>
+      <br>
+      Schüler müssen sich von prozeduralen Denkweisen auf die Objektorientierung umstellen, was zu Verständnisproblemen führen kann. Insbesondere die Erzeugung von Objekten 
+      aus einer Klasse kann irritierend wirken.
+      <br>
+      <br>
+      Die Wahl zwischen Objects-First und Objects-Later hängt von Faktoren, wie Lernziele, Zielgruppe und den verfügbaren Ressourcen ab. Die Berücksichtigung dieser Aspekte 
+      könnte am effektivsten sein, um den Lernerfolg in der objektorientierten Programmierung zu maximieren.
+      <br>
+      <br>
+      </p>
+<h3>Python Programmieraufgaben zum Thema Koordinatensystem und Objektorientierung</h3>
+<p>
+  <b>Aufgabe 1: Einzelne Auto-Bewegungen im Koordinatensystem
+    <br>
+Schreiben Sie einen Python-Code, in dem ein Auto von der Startposition (0,0) zuerst zu (5,0), dann zu (5,5), anschließend zu (0,5) und schließlich zurück zu (0,0) fährt. 
+Nach jeder Bewegung soll die aktuelle Position des Autos ausgegeben werden.</b>
+<br>
+<img src="../image/inf/oop_img/oop_py_grid_prog_aufg1.jpg" alt="OOP_Python_Aufg1" class="responsive-img" onclick="openModal(this);">
+<img src="../image/inf/oop_img/oop_py_grid_ausg_aufg1.jpg" alt="OOP_Python_Aufg1" class="responsive-img" onclick="openModal(this);">
+<br>
+<br>
+<b>Aufgabe 2: Bewegung eines zweiten Autos im Koordinatensystem
+  <br>
+Ergänzen Sie den Code aus Aufgabe 1, indem Sie ein zweites Auto hinzufügen, das eine andere Route abfährt. Dieses Auto soll von (1,1) starten und dann einzeln zu den Punkten 
+(1,4), (4,4), (4,1) und schließlich zurück zu (1,1) fahren. Jede Bewegung soll einzeln angegeben werden, um das Verständnis zu erleichtern.</b>
+<br>
+<img src="../image/inf/oop_img/oop_py_grid_prog_aufg2.jpg" alt="OOP_Python_Aufg2" class="responsive-img" onclick="openModal(this);">
+<img src="../image/inf/oop_img/oop_py_grid_ausg_aufg2.jpg" alt="OOP_Python_Aufg2" class="responsive-img" onclick="openModal(this);">
+</p>
+
+<h3>Wiederholungsaufgaben: Entwicklung eines interaktiven Tagebuchs</h3>
+<p>
+  <b>Sie entwickeln ein einfaches, interaktives Tagebuchprogramm in Python, das verschiedene grundlegende Konzepte des Programmierens nutzt. Jede Aufgabe baut auf der vorherigen auf 
+    und erweitert das Tagebuch um neue Funktionen. Für jede Aufgabe sind die entsprechenden Tutorials verlinkt. Testen Sie nach jeder Aufgabe, ob die Funktion gegeben ist!</b>
+    <br>
+    <img src="../image/inf/oop_img/oop_py_journal_ausg.jpg" alt="OOP_Python_Journal" class="responsive-img" onclick="openModal(this);">
+</p>
+<h3>Installation und Test von Kivy</h3>
+<img src="../image/inf/oop_img/oop_py_kivy_test.jpg" alt="OOP_Python_Kivy_Test" class="responsive-img" onclick="openModal(this);">
+<p></p>
+<h3>Grundlegende Struktur einer Kivy-App</h3>
+<p>
+  <img src="../image/inf/oop_img/oop_py_kivy_basic_app.jpg" alt="OOP_Python_Kivy_Basic" class="responsive-img" onclick="openModal(this);">  
+</p>
+<h3>Kivy-Aufgaben</h3>
+<p>
+  <b>Aufgabe 1: Hinzufügen von Alters- und Wohnortabfragen</b>
+  <br>
+  <img src="../image/inf/oop_img/oop_py_kivy_tasks_aufg1.jpg" alt="OOP_Python_Kivy_Basic" class="responsive-img" onclick="openModal(this);">  
+  <br>
+  <br>
+  <b>Aufgabe 2: Anzeige aller gesammelten Informationen</b>
+  <br>
+  <img src="../image/inf/oop_img/oop_py_kivy_tasks_aufg2.jpg" alt="OOP_Python_Kivy_Basic" class="responsive-img" onclick="openModal(this);">  
+  <br>
+  <br>
+  <b>Aufgabe 3: Ergänzung eines "Programm Beenden"-Buttons</b>
+  <br>
+  <img src="../image/inf/oop_img/oop_py_kivy_tasks_aufg3.jpg" alt="OOP_Python_Kivy_Basic" class="responsive-img" onclick="openModal(this);">  
+  <br>
+  Bis zur Aufgabe 3 sieht die erstellte GUI wie folgt aus:
+  <br>
+  <img src="../image/inf/oop_img/oop_py_kivy_tasks_gui.jpg" alt="OOP_Python_Kivy_Tasks" class="responsive-img" onclick="openModal(this);"> 
+  <br>
+  <br>
+  <b>Aufgabe 4: Implementierung von weiteren Elementen aus dem interaktiven Tagebuch</b>
+  <br>
+  <img src="../image/inf/oop_img/oop_py_kivy_tasks_aufg4.jpg" alt="OOP_Python_Kivy_Tasks" class="responsive-img" onclick="openModal(this);"> 
+  <br>
+  Dieser Screenshot zeigt die Erweiterung des Codebeispiels aus Aufgabe 1-3, um die Funktionalitäten des interaktiven Tagebuchs. 
+  <br>
+</p>
+    <h3>Downloads</h3>
+    <li><a href="../assets/objects.py" download>Objektorientierte Programmierung in Python - Aufgaben herunterladen</a></li>
+    <li><a href="../assets/opp_grid.py" download>Programmieraufgaben zum Thema Koordinatensystem und Objektorientierung - Aufgaben herunterladen</a></li>
+    <li><a href="../assets/interactive_journal.py" download>Wiederholungsaufgaben: Entwicklung eines interaktiven Tagebuchs herunterladen</a></li>
+    <li><a href="../assets/kivy_tasks_journal.py" download>Grundlagen Kivy: interaktives Tagebuch mit GUI - Aufgaben herunterladen</a></li>
+
+    <h3>Quellen</h3>
+<li><i>Fachdidaktik Informatik. (o. D.). Abgerufen von <a href= "https://informatik-franke.de/lehre/sose/fadiinf/u3.html" >"https://informatik-franke.de/lehre/sose/fadiinf/u3.html" </a></i></li>
+<li><i>Ehlert, A. (2012). Empirische Studie: Unterschiede im Lernerfolg und Unterschiede im subjektiven Erleben des Unterrichts von Schülerinnen und Schülern im Informatik-Anfangsunterricht (11. Klasse Berufliches Gymnasium) in Abhängigkeit von der zeitlichen Reihenfolge der Themen (OOP-First und OOP-Later) (Dissertation). Freie Universität Berlin. Abgerufen von <a href= "https://refubium.fu-berlin.de/bitstream/handle/fub188/9871/DissEhlertElektronisch2012oL.pdf?sequence=1&isAllowed=y" >"https://refubium.fu-berlin.de/bitstream/handle/fub188/9871/DissEhlertElektronisch2012oL.pdf?sequence=1&isAllowed=y" </a></i></li>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="impressum">
+        <p>Heinrich Krug | heinrich.krug@stud.ph-weingarten.de</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Einbinden der externen JavaScript-Datei -->
+  <script src="../script/script.js"></script>
+</body>
+</html>

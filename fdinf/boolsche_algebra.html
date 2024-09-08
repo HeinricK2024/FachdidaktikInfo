@@ -1,0 +1,203 @@
+DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio-Fachdidaktik Informatik</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <ul>
+        <li><a href="../index.html"><i class="fas fa-home"></i> Startseite</a></li>
+        <li>
+            <a href="fachdidaktik_overview.html"><i class="fas fa-book"></i> Einführung in die Fachdidaktik Informatik</a>
+            <ul>
+                <li><a href="programmieren.html">Programmieren</a></li>
+                <li><a href="ides.html">Entwicklungsumgebungen</a></li>
+                <li><a href="objects.html">Objects First vs. Objects Later</a></li>
+                <li><a href="didaktikprog.html">Didaktische Ansätze</a></li>
+                <li><a href ="didaktische_ansatze.html">Evaluation von Unterrichtsmaterialien für den Informatikunterricht</a></li>
+                <li><a href="gamification.html">Gamification</a></li>
+                <li><a href="boolsche_algebra.html">Einführung in die Boolesche Algebra</a></li>
+                <li><a href="introduction_in_scratch.html">Scratch Unterrichtseinheit</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="../didkonz/konzeptionen_overview.html"><i class="fas fa-book"></i> Didaktische Konzeptionen der beruflichen Bildung</a>
+            <ul>
+                <li><a href="../didkonz/albers_didaktische_modelle.html">Albers - Modelle und didaktische Konzepte in der Berufsbildung</a></li>
+                <li><a href="../didkonz/geschichte_bildungsbegriff.html">Historischer Hintergrund der beruflichen Ausbildung</a></li>
+                <li><a href="../didkonz/euler_wirtschaftsdidaktik.html">Euler - Theoretische Zugänge zur Wirtschaftsdidaktik</a></li>
+                <li><a href="../didkonz/arnold_kompetenzbegriff.html">Arnold, Schüssler - Entwicklung des Kompetenzbegriffs</a></li>
+                <li><a href="../didkonz/clement_kompetenzentwicklung.html">Clement - Kompetenzentwicklung im internationalen Kontext</a></li>
+                <li><a href="../didkonz/kutscha_allgemeine_berufliche_bildung.html">Kutscha - Zum Verhältnis von allgemeiner und beruflicher Bildung im Kontext bildungstheoretischer Reformkonzepte</a></li>
+            </ul>
+        </li>
+        <li><a href="../reflexion.html"><i class="fas fa-book"></i>Verknüpfung der beiden Veranstaltungen</a></li>
+    </ul>
+</div>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+<main>
+    <div class="container">
+        <h1>Sitzung - Thema: Einführung in die Boolesche Algebra</h1>
+<h3>Aufgabenstellung</h3>
+    <p><b>Aufgaben:</b>
+        <li><b>Erstellen Sie eine Schaltung im Simulator, die zwei Eingangsvariablen verwendet und den 
+          AND-Operator implementiert. Überprüfen Sie, ob das Ergebnis nur dann wahr ist, wenn beide 
+          Eingänge wahr sind.</b></li>
+            <br>
+            <img src="../image/inf/bool_img/Task1.jpg" alt="Schaltung 1" class="responsive-img" onclick="openModal(this);">
+            <br>
+            Die Schaltung, wenn beide Eingangsvariablen wahr sind. (Quelle: eigene Aufnahme)
+            <br>
+            <img src="../image/inf/bool_img/Task 1_1.jpg" alt="Schaltung 1 aus" class="responsive-img" onclick="openModal(this);">
+            <br>
+            Zum Vergleich die Schaltung, wenn nur eine Eingangsvariable wahr ist. (Quelle: eigene Aufnahme)
+            <br>
+            <br>
+        <li><b>Modifizieren Sie die Schaltung, indem Sie einen NOT-Operator hinzufügen, um die Ausgabe des 
+          AND-Gatters zu invertieren. Beobachten Sie, wie sich das Ausgabesignal ändert.</b></li>
+          <br>
+          <img src="../image/inf/bool_img/Task 2.jpg" alt="Schaltung 2 aus" class="responsive-img" onclick="openModal(this);">
+            <br>
+            Wenn beide Eingangsvariablen auf wahr sind, schaltet die Ausgabevariable auf falsch. (Quelle: eigene Aufnahme)
+            <br>
+            <img src="../image/inf/bool_img/Task 2_2.jpg" alt="Schaltung 2 aus" class="responsive-img" onclick="openModal(this);">
+            <br> 
+            Nur, wenn beide Eingangsvariablen auf falsch sind, schaltet die Ausgabevariable auf wahr. (Quelle: eigene Aufnahme)
+            <br> 
+            <br>
+        <b>Konstruieren Sie eine Schaltung, die die OR-Operation zwischen zwei Variablen demonstriert. 
+        <br>
+        <br>
+        <li>Testen Sie alle möglichen Kombinationen von Eingangswerten und notieren Sie die Ergebnisse.</li>
+        <li>Dokumentieren Sie Ihre Ergebnisse und erklären Sie, wie die Schaltung funktioniert.</li></b>
+        <br>
+        <br>
+        <img src="../image/inf/bool_img/Task 3.jpg" alt="Schaltung 3 aus" class="responsive-img" onclick="openModal(this);">
+        <br> 
+        <b>Test der Schaltung:</b>
+        <br>
+        <br>
+        <li><b>Fall 1: A = 0, B = 0</b></li>
+        <br>
+        - Beide Eingangsschalter (A und B) sind aus, d. h. auf 0 gesetzt.
+        <br>
+        - Der Output des OR-Gatters ist 0, daher leuchtet die Ausgangsvariable nicht.
+          <br>
+          <br>
+        <li><b>Fall 2: A = 0, B = 1</b></li>
+        <br>
+        - Eingangsschalter A ist aus (0) und Eingangsschalter B ist ein (1).
+        <br>
+        - Der Output des OR-Gatters ist 1, daher leuchtet die Ausgangsvariable.
+        <br>
+        <br>
+        <li><b>Fall 3: A = 1, B = 0</b></li>
+        <br>
+        - Eingangsschalter A ist ein (1) und Eingangsschalter B ist aus (0).
+        <br>
+        - Der Output des OR-Gatters ist 1, daher leuchtet die Ausgabevariable.
+        <br>
+        <br>
+        <li><b>Fall 4: A = 1, B = 1</b></li>
+        <br>
+        - Beide Eingangsschalter (A und B) sind ein, d. h. auf 1 gesetzt.
+        <br>
+        - Der Output des OR-Gatters ist 1, daher leuchtet die Ausgangsvariable.
+        <br>
+        <br>
+        <li><b>Erweitern Sie die Schaltung um eine Kombination aus AND, OR und NOT-Operatoren, um eine komplexere logische Funktion zu erstellen. </b></li>       
+        <br>
+        <br>
+        <img src="../image/inf/bool_img/Task 4.jpg" alt="Schaltung 4 an" class="responsive-img" onclick="openModal(this);">
+        <br> 
+        <b>Test der Schaltung:</b>
+        <br>
+        <br>
+        In der obigen Schaltung, steht Z für den Ausgang der logischen Funktion. Das heißt, das Z das Ergebnis der kombinierten logischen Operationen ist, die auf den Eingabewerten A und B durchgeführt werden.
+        <br>
+        <br>
+        <li><b>Fall 1: A = 0, B = 0</b></li>
+        <br>
+        - AND-Gatter: 𝐴 AND 𝐵 = 0 AND 0 = 0
+        <br>
+        - NOT-Gatter:  NOT(A)=NOT(0)=1
+        <br>
+        - OR-Gatter:  Z=(0 OR 1)=1
+        <br>
+        - Ergebnis: Output leuchtet, da Z=1
+          <br>
+          <br>
+        <li><b>Fall 2: A = 0, B = 1</b></li>
+        <br>
+        - AND-Gatter:  A AND B=0 AND 1=0
+        <br>
+        - NOT-Gatter:  NOT(A)=NOT(0)=1
+        <br>
+        - OR-Gatter:  Z=(0 OR 1)=1
+        <br>
+        - Ergebnis: Output leuchtet, da Z=1.
+        <br>
+        <br>
+        <li><b>Fall 3: A = 1, B = 0</b></li>
+        <br>
+        - AND-Gatter:  A AND B=1 AND 0=0
+        <br>
+        - NOT-Gatter:  NOT(A)=NOT(1)=0
+        <br>
+        - OR-Gatter:  Z=(0 OR 0)=0
+        <br>
+        - Ergebnis: Output bleibt aus, da Z=0.
+        <br>
+        <br>
+        <li><b>Fall 4: A = 1, B = 1</b></li>
+        <br>
+        - AND-Gatter:  A AND B=1 AND 1=1
+        <br>
+        - NOT-Gatter:  NOT(A)=NOT(1)=0
+        <br>
+        - OR-Gatter:  Z=(1 OR 0)=1
+        <br>
+        - Ergebnis: Output leuchtet, da Z=1.
+
+        <br>
+<br>
+        <b>Erklärung der Funktionsweise:</b>
+        <br>
+        Die Schaltung verwendet eine Kombination aus AND-, OR- und NOT-Gattern, um die logische Funktion 
+        𝑍=(𝐴 AND 𝐵) OR NOT (𝐴) zu realisieren. Hier ist, was die einzelnen Gatter tun:
+        <br>
+        <br>
+        <li>- AND-Gatter: Gibt nur dann 1 aus, wenn sowohl A als auch 𝐵 gleich 1 sind. Ansonsten gibt es 0 aus.</li>
+        <li>- NOT-Gatter: Invertiert den Wert von  A, d. h. wenn  A 0 ist, wird 1 ausgegeben, und wenn A 1 ist, wird 0 ausgegeben.</li>
+        <li>- OR-Gatter: Gibt 1 aus, wenn mindestens einer der beiden Eingänge (entweder A AND B oder  NOT(A)) 1 ist. Gibt nur 0 aus, wenn beide Eingänge 0 sind.</li>
+        <br>
+        Durch das Testen aller möglichen Kombinationen der Eingangswerte A und B konnten wir feststellen, wann der Output leuchtet (wenn der Ausgang  Z=1 ist) und wann er nicht leuchtet (wenn  Z=0 ist).
+        
+      </p>
+
+<h3>Quellen</h3>
+<li><i>Boolsche Algebra. (o. D.). Abgerufen von <a href= "https://informatik-franke.de/lehre/sose/fundidee/u6.html" >"https://informatik-franke.de/lehre/sose/fundidee/u6.html" </a></i></li>
+<li><i>Logic Gate Simulator | Academo.org - Free, interactive, education. (o. D.). Abgerufen von <a href= "https://academo.org/demos/logic-gate-simulator/" >"https://academo.org/demos/logic-gate-simulator/" </a></i></li>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="impressum">
+        <p>Heinrich Krug | heinrich.krug@stud.ph-weingarten.de</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Einbinden der externen JavaScript-Datei -->
+  <script src="../script/script.js"></script>
+</body>
+</html>
